@@ -1,0 +1,401 @@
+<!doctype html>
+<html>  
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>IVI</title>
+	<link rel="stylesheet" href="style1.css" media="(min-width:0px)">
+	<link rel="stylesheet" href="jquery.bxslider.css">
+  </head>
+  
+  <body>
+  	<!--動画-->
+	<video autoplay loop muted preload="auto" id="movie"><source src="resouces/IVI_Web_comp_1.mp4"></video>
+	
+	<!--モバイルメニュー-->
+	<div id="leftToggle">
+		<div class="left-menu active">
+			<div class="left-menu-content">
+				<div class="left-menu-close left-menu-closemark">
+					<i class="blogicon blogicon-close">
+					<img src="resouces/close.png"></i>
+				</div>
+			</div>
+		    <div class="left-menu-content">
+				<a data-easing="easeOutQuad" href="#top" class="menu left-menu-close"><img src="resouces/ivi2.png" id="logo_black_side"></a>
+				<button class="menu left-menu-close"><a data-easing="easeOutQuad" href="#wrapper_ivi" class="menu_ivi">IVI</a></button>
+				<button class="menu left-menu-close"><a data-easing="easeOutQuad" href="#wrapper_activity" class="menu_activity">ACTIVITY</a></button> 
+				<button class="menu left-menu-close"><a data-easing="easeOutQuad" href="#wrapper_achivement" class="menu_achivement">ACHIVEMENT</a></button> 
+				<button class="menu left-menu-close"><a data-easing="easeOutQuad" href="#wrapper_member" class="menu_member">MEMBER</a></button>
+				<button class="menu left-menu-close"><a data-easing="easeOutQuad" href="#wrapper_contact" class="menu_contact">CONTACT</a></button>
+			</div>
+		</div>
+		<span class="left-menuBtn"><i class="blogicon blogicon-reorder"></i></span>
+	</div>
+	
+	<!--PCメニュー-->	
+	<div id="header1">
+		<a data-easing="easeOutQuad" href="#top"><img src="resouces/ivi.png" id="logo_white"></a>
+        <a data-easing="easeOutQuad" href="#top"><img src="resouces/ivi2.png" id="logo_black"></a>
+        <button class="menu" id="menu_right"><a data-easing="easeOutQuad" href="#wrapper_contact" class="menu_contact menulink">CONTACT</a></button>    
+        <button class="menu"><a data-easing="easeOutQuad" href="#wrapper_member" class="menu_member menulink" >MEMBER</a></button>
+        <button class="menu"><a data-easing="easeOutQuad" href="#wrapper_achivement" class="menu_achivement menulink" >ACHIVEMENT</a></button> 
+        <button class="menu"><a data-easing="easeOutQuad" href="#wrapper_activity" class="menu_activity menulink" >ACTIVITY</a></button>   <button class="menu"><a data-easing="easeOutQuad" href="#wrapper_ivi" class="menu_ivi menulink" >IVI</a></button>
+	</div>
+
+	<!--スクロールマーク-->
+	<div id="scroll">
+		<p>　<span class="scrolldisplay">SCROLL</span>　</p>
+	</div>
+	<div id="scroll_block">
+		<img src="resouces/scroll.png" class="scrolldisplay" id="scroll_img">
+	</div>
+	
+	<!--ivi-->
+	<div id="wrapper_ivi">
+		<div class="title">IVI</div>
+		<div class="title_underber"></div>
+		<div class="title2">アイビー</div>
+		<div id="wrapper_ivi_large">
+			<span class="text">話し合って考えることを</span><span class="text">大切にするデザインサークル</span>
+		</div>
+		<div id="wrapper_ivi_small">
+			私たちは法政大学デザイン工学部システムデザイン学科公認のデザインサークルです。見た目の美しさ以上にその背後にあるコンセプトやユーザーが得られる価値を考え、調査し、アイデアに反映させていくことを重視して活動しています。学年を超えたつながりの中で切磋琢磨し、成長できる環境でデザインを学ぶことができます。
+		</div>
+		<img src="resouces/important.png" id="important">
+		<img src="resouces/important_mobile.png" id="important_mobile">
+	</div>
+	
+	<!--activity-->
+	<div id="wrapper_activity">
+		<div class="title">ACTIVITY</div>
+		<div class="title_underber"></div>
+		<div class="title2">主な活動内容</div>
+		<div id="activity_box">
+			<div id="active_left">
+				<img src="resouces/1workshop.png" class="activity_img">
+				<div class="activity_title">ワークショップ</div>
+				<div class="activity_sentence">
+					OB・OGのデザイナーの方や企業の方を講師に招き実践的なデザインを学びます。
+				</div>
+			</div>
+			<div id="active_center">
+				<img src="resouces/2competition.png" class="activity_img">
+				<div class="activity_title">コンペティション</div>
+				<div class="activity_sentence">
+					サークルの中でグループを組み考えるプロセスを学びながらコンペに応募します。
+				</div>
+			</div>
+			<div id="active_right">
+				<img src="resouces/3portfolio.png" class="activity_img">
+				<div class="activity_title">ポートフォリオ</div>
+				<div class="activity_sentence">
+					就職に必要なポートフォリオの作り方を学びお互い刺激しあい精度を高めます。
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<!--achivement-->
+	<div id="wrapper_achivement">
+		<div class="title">ACHIVEMENT</div>
+		<div class="title_underber"></div>
+		<div class="title2">実績ポートフォリオ</div>
+		<div id=achivement_box>
+		<ul class="slider">
+			<li>
+				<img src="resouces/ASAPO-1.png" alt="スライド1" class="achivement_img">
+				<div class="achivement_text clearfix">
+					<h3>ASAPO</h3>
+					<h4>UI展展示作品 / 作成者:松岡優季</h4>
+					<p>この作品はカフェと約束することで充実した朝を過ごせるアプリです。企画からUIデザインまで手がけました。</p>
+				</div>
+			</li>
+			<li>
+				<img src="resouces/ASAPO-2.png" alt="スライド2" class="achivement_img">
+				<div class="achivement_text clearfix">
+					<h3>ASAPO</h3>
+					<h4>UI展展示作品 / 作成者:松岡優季</h4>
+					<p>この作品はカフェと約束することで充実した朝を過ごせるアプリです。企画からUIデザインまで手がけました。</p>
+				</div>
+			</li>
+			<li>
+				<img src="resouces/ASAPO-3.png" alt="スライド3" class="achivement_img">
+				<div class="achivement_text clearfix">
+					<h3>ASAPO</h3>
+					<h4>UI展展示作品 / 作成者:松岡優季</h4>
+					<p>この作品はカフェと約束することで充実した朝を過ごせるアプリです。企画からUIデザインまで手がけました。</p>
+				</div>
+			</li>
+			<li>
+				<img src="resouces/tuffo-1.png" alt="スライド4" class="achivement_img">
+				<div class="achivement_text clearfix">
+					<h3>ASAPO</h3>
+					<h4>UI展展示作品 / 作成者:松岡優季</h4>
+					<p>この作品はカフェと約束することで充実した朝を過ごせるアプリです。企画からUIデザインまで手がけました。</p>
+				</div>
+			</li>
+		</ul>
+		</div>
+	</div>
+	
+	<!--member-->
+	<div id="wrapper_member">
+		<div class="title">MEMBER</div>
+		<div class="title_underber"></div>
+		<div class="title2">メンバー紹介</div>
+		<div id="member_box">
+			<ul>
+				<li>
+					<div class="grade">Grade　4</div>
+						<img src="resouces/member/imamura.jpg" class="img_person">
+					<div class="name">今村　翔也</div>
+				</li>
+				<li>
+					<div class="grade">Grade　4</div>
+						<img src="resouces/member/shibata.jpg" class="img_person">
+					<div class="name">柴田　匠磨</div>
+				</li>
+				<!--<li>
+					<div class="grade">Grade　4</div>
+						<img src="resouces/nagamata.jpg" class="img_person">
+					<div class="name">長又　亮太</div>
+				</li>-->
+				<li>
+					<div class="grade">Grade　3</div>
+						<img src="resouces/member/degu.jpg" class="img_person">
+					<div class="name">出口　裕貴</div>
+				</li>
+				<li>
+					<div class="grade">Grade　3</div>
+						<img src="resouces/member/okayu.jpg" class="img_person">
+					<div class="name">松岡　優季</div>
+				</li>
+				<li>
+					<div class="grade">Grade　3</div>
+						<img src="resouces/member/ranchan.jpg" class="img_person">
+					<div class="name">入江　嵐士郎</div>
+				</li>
+				<li>
+					<div class="grade">Grade　3</div>
+						<img src="resouces/member/sanjo.jpg" class="img_person">
+					<div class="name">三城　大河</div>
+				</li>
+				<li>
+					<div class="grade">Grade　2</div>
+						<img src="resouces/member/toyama.jpg" class="img_person">
+					<div class="name">外山　創大</div>
+				</li>
+				<li>
+					<div class="grade">Grade　2</div>
+						<img src="resouces/member/makito.jpg" class="img_person">
+					<div class="name">天谷　真輝人</div>
+				</li>
+				<li>
+					<div class="grade">Grade　2</div>
+						<img src="resouces/member/etsuko.jpg" class="img_person">
+					<div class="name">林　悦子</div>
+				</li>
+				<li>
+					<div class="grade">Grade　2</div>
+						<img src="resouces/member/miku.jpg" class="img_person">
+					<div class="name">村上　美郁</div>
+				</li>
+				<li>
+					<div class="grade">Grade　2</div>
+						<img src="resouces/member/midori.jpg" class="img_person">
+					<div class="name">斎藤　碧</div>
+				</li>
+				<li>
+					<div class="grade">Grade　1</div>
+						<img src="resouces/member/haruka.jpg" class="img_person">
+					<div class="name">奥村　はるか</div>
+				</li>
+				<li>
+					<div class="grade">Grade　1</div>
+						<img src="resouces/member/kawai.jpg" class="img_person">
+					<div class="name">河合　はると</div>
+				</li>
+				<li>
+					<div class="grade">Grade　1</div>
+						<img src="resouces/member/fujita.jpg" class="img_person">
+					<div class="name">藤田　朋大</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!--contact-->
+	<div id="wrapper_contact">
+		<div class="title">CONTACT</div>
+		<div class="title_underber"></div>
+		<div class="title2">お問い合わせ</div>
+		<div id="adress">ivi.systemdesign@gmail.com</div>
+		<div id="otoiawase">ご用の方はこちらのメールアドレスまでお願いいたします。</div>
+	</div>
+
+	<div id="footer">
+		Copyright　©︎　2018　ivi_systemdesign
+	</div>
+
+<!--jqueryをweb上で読み込む-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+
+<!--JSファイルの読み込み-->
+<script type='text/javascript' src="main.js"></script>
+
+<!--bxsliderを使うためのjquery読み込み-->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!--ローカルのbxsliderのjquery読み込み-->
+<script src=jquery.bxslider.min.js></script>
+
+<script type="text/javascript"> /*実行コード*/
+    /*jQuery(document).ready(function($) {*/
+        $(function(){	
+
+			//スクロールした時
+			$(window).scroll(function() {
+
+				//動画の高さを読み込み、#scrollのmargin-topを動画の高さ-130pxにする
+				var h = $('#movie').height();
+				$('#scroll').css('margin-top', h - 130);
+
+				//スクロール量を変数に格納、動画の高さ以上になったらヘッダーのcssを変化させる
+				var sc = $(document).scrollTop();
+				if ( sc > h ) {
+				  $('.menulink').css('color', "rgba(16,22,33,0.36)");
+				  $('#header1').css('background-color', "rgba(255, 255, 255, 0.97)");
+				  $('#logo_white').css('display', "none");
+				  $('#logo_black').css('display', "block");
+				  $('.left-menuBtn').css('background-image', "url(resouces/mobilemenu2.png)");
+
+				} else {
+				  $('.menulink').css('color', "rgba(255,255,255,0.9)");
+				  $('#header1').css('background-color', "rgba(255,255,255,0)");
+				  $('#logo_white').css('display', "block");
+				  $('#logo_black').css('display', "none");
+					$('.left-menuBtn').css('background-image', "url(resouces/mobilemenu.png)");
+				}	
+
+				//要素のトップの座標を取得
+				var ivitop = $("#wrapper_ivi").offset().top;
+				var activitytop = $("#wrapper_activity").offset().top;
+				var achivementtop = $("#wrapper_achivement").offset().top;
+				var membertop = $("#wrapper_member").offset().top;
+				var contacttop = $("#wrapper_contact").offset().top;
+				var documentheight = $(document).height();
+				var windowheight = $(window).height();
+
+				//下線
+				if (documentheight - windowheight - 10 <= sc){ 
+					$(".menu_ivi").css("border-bottom","none");
+					$(".menu_activity").css("border-bottom","none");
+					$(".menu_achivement").css("border-bottom","none");
+					$(".menu_member").css("border-bottom","none");
+					$(".menu_contact").css("border-bottom","2px solid #47A0BE");
+				}else if(membertop - 150 <= sc){
+					$(".menu_ivi").css("border-bottom","none");
+					$(".menu_activity").css("border-bottom","none");
+					$(".menu_achivement").css("border-bottom","none");
+					$(".menu_member").css("border-bottom","2px solid #47A0BE");
+					$(".menu_contact").css("border-bottom","none");
+				}else if(achivementtop - 150 <= sc){
+					$(".menu_ivi").css("border-bottom","none");
+					$(".menu_activity").css("border-bottom","none");
+					$(".menu_achivement").css("border-bottom","2px solid #47A0BE");
+					$(".menu_member").css("border-bottom","none");
+					$(".menu_contact").css("border-bottom","none");
+				}else if(activitytop - 150 <= sc){
+					$(".menu_ivi").css("border-bottom","none");
+					$(".menu_activity").css("border-bottom","2px solid #47A0BE");
+					$(".menu_achivement").css("border-bottom","none");
+					$(".menu_member").css("border-bottom","none");
+					$(".menu_contact").css("border-bottom","none");
+				}else if(ivitop - 150 <= sc){
+					$(".menu_ivi").css("border-bottom","2px solid #47A0BE");
+					$(".menu_activity").css("border-bottom","none");
+					$(".menu_achivement").css("border-bottom","none");
+					$(".menu_member").css("border-bottom","none");
+					$(".menu_contact").css("border-bottom","none");
+				}else{
+					$(".menu_ivi").css("border-bottom","none");
+					$(".menu_activity").css("border-bottom","none");
+					$(".menu_achivement").css("border-bottom","none");
+					$(".menu_member").css("border-bottom","none");
+					$(".menu_contact").css("border-bottom","none");
+				}
+        	});
+			
+			//モバイルのメニュー
+			$(".left-menuBtn").click(function(){
+				$(".left-menu").addClass("active");
+				$(".active").animate({width:'toggle'},200);
+				$(".left-menuBtn").css("display","none")
+			});
+			
+	    	$(".left-menu-close").click(function(){
+			$(".left-menu").addClass("active");
+			$(".active").animate({width:'toggle'},200);
+			$(".left-menuBtn").css("display","inline-block")
+		    });
+	    });
+	//});
+	
+	$(window).load(function () {
+
+		//liを人の写真の高さに合わせる
+		var img_h = $('.img_person').height();
+		$('#member_box li').css('height', img_h + 30);
+		
+		//bxsliderでスライダーの設置
+		var windowWidth = window.innerWidth;
+
+		if (windowWidth > 768) {
+			// PCの処理
+			$('.slider').bxSlider({
+			//自動スクロールtrue
+			auto: true,
+			//自動スクロールの間隔
+			pause: 7000,
+			//スライダーの幅
+			slideWidth: 600,
+			//スライダーにj表示する数
+			minSlides: 1,
+			maxSlides: 1			  
+			});
+		  } else {
+			// SPの処理
+			$('.slider').bxSlider({
+			//自動スクロールtrue
+			auto: true,
+			//自動スクロールの間隔
+			pause: 7000,
+			//スライダーの幅
+			slideWidth: 300,
+			//スライダーにj表示する数
+			minSlides: 1,
+			maxSlides: 1			  
+			});
+		  }
+	});	
+	</script>
+
+	<script src="smooth-scroll.polyfills.min.js"></script>
+		<script>
+			// Instantiate Scrolls
+			var scroll = new SmoothScroll('a[href*="#"]:not([data-easing])');
+			var linear = new SmoothScroll('[data-easing="linear"]', {easing: 'linear'});
+			var easeOutQuad = new SmoothScroll('[data-easing="easeOutQuad"]', {easing: 'easeOutQuad'});
+			// Log scroll events
+			var logScrollEvent = function (event) {
+				console.log('type:', event.type);
+				console.log('anchor:', event.detail.anchor);
+				console.log('toggle:', event.detail.toggle);
+			};
+			document.addEventListener('scrollStart', logScrollEvent, false);
+			document.addEventListener('scrollStop', logScrollEvent, false);
+			document.addEventListener('scrollCancel', logScrollEvent, false);
+		</script>
+	</body>
+</html>
