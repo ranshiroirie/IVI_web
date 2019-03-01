@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>無題ドキュメント</title>
+</head>
+
+<body>
+<div id="message"></div>
+<script>
+window.addEventListener("deviceorientation",gyroscope);
+function gyroscope(e){
+	var x = e.beta;
+	var y = e.gamma;
+	var z = e.alpha;
+	var message = document.getElementById("message");
+	message.innerHTML = "X:"+x+",Y:"+y+",Z:"+z;
+	var bodyElem = document.getElementsByTagName("body");
+	bodyElem[0].style.backgroundColor="rgb("+(100+x)+','+(100+y)+','+(100+z)+")";
+}
+</script>
+</body>
+</html>

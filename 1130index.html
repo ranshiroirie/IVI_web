@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<style>
+		#map{
+			width: 360px;
+			height: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div id="map"></div>
+	<div id="message"></div>
+	<script src="http://maps.google.com/maps/api/js?key=AIzaSyBHC79-llHjtupDxzDzavuh5TEWk1Q1DKs"></script>
+	<script>
+		window.onload = function(){
+			navigator.geolocation.getCurrentPosition(positionSuccess, positionError);
+			//positionSuccess 位置情報が取れていたら呼び出す
+			//positionError 位置情報が取れなかったら呼び出す
+		}
+
+		function positionSuccess(e){
+			var messages = document.getElementById("message");
+			var map = document.getElementById("map");
+			var latlng = new google.maps.LatLng(e.coords.latitude, e.coords.longitude);
+			var option = {
+				zoom: 18,
+				center: latlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var gmap = new google.maps.Map(map, option);
+			//表示したい場所(id = "map"のところ)とオプションを指定するとGoogleMapが表示される
+			messages.innerHTML = 
+			"緯度 : " + e.coords.latitude + "<br>" +
+			"経度 : " + e.coords.longitude + "<br>" +
+			"緯度経度の誤差 : " + e.coords.accuracy + "<br>" +
+			"高度 : " + e.coords.altitude + "<br>" +
+			"高度の誤差 : " + e.coords.altitudeAccuracy + "<br>" +
+			"方角 : " + e.coords.heading + "<br>" +
+			"速度 : " + e.coords.speed + "<br>";
+		}
+
+		function positionError(){
+			window.alert('取得に失敗');
+		}
+	</script>
+</body>
+</html>
