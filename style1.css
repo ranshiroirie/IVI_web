@@ -344,6 +344,10 @@ text-align: left;
 	margin: 0;
 }
 
+.slider a{
+	color: black;
+}
+
 #wrapper_member {
 	background: #F2F2F2;
 	padding:100px 13%;
